@@ -38,18 +38,17 @@ while (idx != -1) {
 //console.log(Ocount);
 
 
-var reset = function(){
-  board = ["","","","","","","","",""];
+var firstTurn = function(square){
+  board[square] = 'x';
 };
+
+
 var checkWinner = function(player){
 
 };
-// var firstmove= 'x';
-// var whoseTurn = function(firstmove){
-//   for (var i = 1; i < 10; i++) {
-//     (i % 2 === 1) ? (whoseTurn = 'x') && (i=i+1) : (whoseTurn = 'o') && (;
-//   }
+var reset = function(){
+  board = ["","","","","","","","",""];
+};
 
-// };
 
 module.exports = true;
