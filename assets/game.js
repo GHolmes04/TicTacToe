@@ -19,25 +19,37 @@ var playerMove;
 //   }
 
 // };
+var Xcount = [];
+var element = 'x';
+var idx = board.indexOf(element);
+while (idx != -1) {
+  Xcount.push(idx);
+  idx = board.indexOf(element, idx + 1);
+}
+//console.log(Xcount);
+
+var Ocount = [];
+var element = 'x';
+var idx = board.indexOf(element);
+while (idx != -1) {
+  Ocount.push(idx);
+  idx = board.indexOf(element, idx + 1);
+}
+//console.log(Ocount);
+
+
 var reset = function(){
   board = ["","","","","","","","",""];
 };
-var checkWinner = function(player){};
-
-
-var whoseTurn = function(){
-  var firstmove = Math.round(Math.random(1, 1000)) % 2 ? "x" :  "o";
-//  for (var i = firstmove; i < board.length ; i++) {
-//    whoseTurn = i;
-//  }
-
-
-
-
+var checkWinner = function(player){
 
 };
+// var firstmove= 'x';
+// var whoseTurn = function(firstmove){
+//   for (var i = 1; i < 10; i++) {
+//     (i % 2 === 1) ? (whoseTurn = 'x') && (i=i+1) : (whoseTurn = 'o') && (;
+//   }
 
-
-
+// };
 
 module.exports = true;
