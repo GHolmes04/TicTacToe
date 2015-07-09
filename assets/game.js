@@ -38,9 +38,15 @@ while (idx != -1) {
 //console.log(Ocount);
 
 
-var firstTurn = function(square){
-  board[square] = 'x';
-};
+//var firstTurn = function(square){
+//  board[square] = 'x';
+//};
+
+var changeTurn;
+  if( Xcount.length > Ocount.length){
+    changeTurn = 'o';
+  }else{ changeTurn = 'x';
+  }
 
 
 var checkWinner = function(player){
