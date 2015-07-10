@@ -19,10 +19,8 @@ var makeMove = function(player, index) {
       board[index] = player;
      return player;
     }
-     return board[index];
+    return board[index];
     console.log( board);
-
-
 };
 
 // var winner;
