@@ -15,7 +15,11 @@ var changeTurn = function(){
 };
 
 var makeMove = function(player, index) {
-    board[index]= player;
+    if(board[index] === "") {
+      board[index] = player;
+     return player;
+    }
+     return board[index];
     console.log( board);
 
 
